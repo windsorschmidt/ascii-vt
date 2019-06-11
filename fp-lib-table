@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name ascii-vt)(type KiCad)(uri ${KIPRJMOD}/ascii-vt.pretty)(options "")(descr ""))
+)
