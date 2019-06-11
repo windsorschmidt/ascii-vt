@@ -142,7 +142,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 2800 4450 2800
 Wire Wire Line
-	4500 3400 4950 3400
+	4500 3500 4950 3500
 NoConn ~ 3850 2800
 NoConn ~ 3850 2600
 Connection ~ 3500 2700
@@ -464,10 +464,6 @@ Wire Wire Line
 	7950 2200 8450 2200
 Wire Wire Line
 	8450 2300 8050 2300
-Wire Wire Line
-	7050 3000 8350 3000
-Wire Wire Line
-	7050 3100 8350 3100
 $Comp
 L power:GND #PWR019
 U 1 1 5D840558
@@ -493,17 +489,6 @@ Wire Wire Line
 	8250 1300 8250 2000
 Wire Wire Line
 	7050 3600 7150 3600
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J7
-U 1 1 5D039E92
-P 8550 3000
-F 0 "J7" H 8600 2678 50  0000 C CNN
-F 1 "BAUD_SEL" H 8600 2768 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8550 3000 50  0001 C CNN
-F 3 "~" H 8550 3000 50  0001 C CNN
-	1    8550 3000
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	7050 2900 8050 2900
 Wire Wire Line
@@ -511,8 +496,6 @@ Wire Wire Line
 Wire Wire Line
 	8050 2300 8050 2900
 Connection ~ 8050 2900
-Wire Wire Line
-	8050 2900 8350 2900
 Wire Wire Line
 	8850 3100 8900 3100
 Wire Wire Line
@@ -1019,13 +1002,13 @@ Wire Wire Line
 $Comp
 L Device:R_Pack04 RN1
 U 1 1 5D6A46F4
-P 3950 3500
-F 0 "RN1" V 3535 3500 50  0000 C CNN
-F 1 "4.7K" V 3625 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 4225 3500 50  0001 C CNN
-F 3 "~" H 3950 3500 50  0001 C CNN
-	1    3950 3500
-	0    1    1    0   
+P 3950 3400
+F 0 "RN1" V 4250 3400 50  0000 C CNN
+F 1 "4.7K" V 4150 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x1206" V 4225 3400 50  0001 C CNN
+F 3 "~" H 3950 3400 50  0001 C CNN
+	1    3950 3400
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	3750 3600 3300 3600
@@ -1038,22 +1021,15 @@ Wire Wire Line
 	3500 3400 3500 3500
 Wire Wire Line
 	3500 3500 3750 3500
-Wire Wire Line
-	4500 3400 4150 3400
-Wire Wire Line
-	4150 3500 4900 3500
-Wire Wire Line
-	4900 3500 4900 2600
 Connection ~ 4900 2600
 Wire Wire Line
 	4900 2600 4950 2600
 Wire Wire Line
 	4450 2600 4900 2600
-Connection ~ 4500 3400
 Wire Wire Line
 	4150 3600 4950 3600
 Wire Wire Line
-	4500 2800 4500 3400
+	4500 2800 4500 3500
 Wire Wire Line
 	3500 2700 3500 3400
 Connection ~ 3500 3400
@@ -1069,4 +1045,28 @@ Wire Wire Line
 	7350 1300 8250 1300
 Wire Wire Line
 	4350 3300 4150 3300
+Wire Wire Line
+	7050 3100 8350 3100
+Wire Wire Line
+	7050 3000 8350 3000
+Wire Wire Line
+	8050 2900 8350 2900
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J7
+U 1 1 5D039E92
+P 8650 3000
+F 0 "J7" H 8700 2678 50  0000 C CNN
+F 1 "BAUD_SEL" H 8700 2768 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8650 3000 50  0001 C CNN
+F 3 "~" H 8650 3000 50  0001 C CNN
+	1    8650 3000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3500 4150 3500
+Connection ~ 4500 3500
+Wire Wire Line
+	4900 2600 4900 3400
+Wire Wire Line
+	4150 3400 4900 3400
 $EndSCHEMATC
