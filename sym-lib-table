@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name ascii-vt)(type Legacy)(uri ${KIPRJMOD}/ascii-vt.lib)(options "")(descr ""))
+  (lib (name "ascii-vt")(type "Legacy")(uri "${KIPRJMOD}/ascii-vt.lib")(options "")(descr ""))
+  (lib (name "ascii-vt-rescue")(type "Legacy")(uri "${KIPRJMOD}/ascii-vt-rescue.lib")(options "")(descr ""))
 )
